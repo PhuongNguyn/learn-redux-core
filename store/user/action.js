@@ -5,3 +5,10 @@ export const addUser = (username) => {
         payload: username
     }
 }
+
+export const deleteUser = (username) => {
+    return {
+        type: "DELETE_USER",
+        payload: username
+    }
+}
