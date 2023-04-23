@@ -12,3 +12,9 @@ export const deleteUser = (username) => {
         payload: username
     }
 }
+
+export const deleteAllUser = () => {
+    return {
+        type: "DELETE_ALL"
+    }
+}

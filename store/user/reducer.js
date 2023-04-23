@@ -17,6 +17,11 @@ export default function userReducer (state = initialState, action) {
                 ...state,
                 users: state.users.filter(user => user != action.payload)
             }
+        case "DELETE_ALL": 
+            return {
+                ...state, 
+                users: []
+            }
         default: 
             return state
     }
